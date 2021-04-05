@@ -1,0 +1,256 @@
+/*Paleta*/
+:root {
+    --preto: #141414;
+    --branco: #F5F5F5; 
+    --cinza: #292929;
+    --roxoEscuro: #4C217C;
+    --roxo: #5E1FA1;
+    --rosa: #EAB0FD;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--branco);
+}
+
+/*Seção padrão*/
+
+.secao {
+    padding: 0 60px;
+    margin: 100px 0;    
+}
+
+/*Título padrão */
+.titulo-secao {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;     
+    color: var(--roxoEscuro);    
+    border-left: 3px solid var(--roxoEscuro);  
+    padding: 8px 0 8px 20px;    
+    margin-bottom: 50px;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: var(--preto);
+    height: 60px;     
+    padding: 20px 30px;     
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    text-transform: uppercase;
+	color: var(--branco);
+	font-weight: bold;
+	font-size: 28px;
+    margin: 0 15px;
+}
+
+.lista-navegacao-esq .lista-navegacao-dir{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-itens {
+    color: var(--branco);
+	font-weight: lighter;
+	font-size: 16px;
+    text-decoration: none;	
+    display: inline-block;
+    margin:0 15px;
+}
+
+.nav-itens:hover {
+    text-decoration: underline; 
+}
+
+/*Seção 1 - Sobre*/
+
+.sobre {
+    display: flex;
+    align-items: center;   
+    justify-content: space-around;    
+}
+
+.sobre-foto {
+    margin: 0 30px 0 60px;    
+}
+
+.sobre-titulo{
+    display: flex;    
+    align-items: center;
+    transform: rotate(-90deg); 
+    border-bottom: 3px solid var(--roxoEscuro);  
+    padding: 5px;
+}
+
+.sobre-titulo h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;     
+    color: var(--roxoEscuro);    
+    width: 150px;      
+}
+
+.sobre-descricao {    
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* Div habilidades */
+
+#secao_habilidades {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+
+}
+
+/* Seção 2 - Linguagens */
+
+.linguagens {    
+    grid-column: 1/3;
+    grid-template-columns: 1/2;
+
+}
+
+.linguagens-grupo {
+    margin: 20px;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linguagem {
+    width: 40%;
+    margin: 20px 0;
+}
+
+.linguagem-rotulo {
+    text-transform: uppercase;
+    color: var(--cinza);
+    margin: 10px 0;
+}
+
+/*Seção 3 - Ferramentas */
+
+.ferramentas {
+    grid-column: 3/4;
+    grid-template-columns: 1/2;    
+}
+
+/* Seção 4 - Experiência */
+
+/* Seção 5 - Projetos */
+
+.projetos-caixa{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projeto-imagem {
+    width: 450px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid var(--preto);
+    box-shadow: 0px 4px 4px 2px rgba(20,20,20,0.25);
+}
+
+.projeto-titulo {
+    font-weight: 900;
+    color: var(--preto);
+    font-size: 24px;
+    margin: 30px 0 10px 0;
+    width: 450px;
+}
+
+.projeto-subtitulo {
+    font-weight: 300;
+    color: var(--preto);
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+/*Seção 6 - Cursos */
+
+.cursos-caixa {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.curso {
+    
+    box-sizing: border-box;
+    border: 2px solid var(--preto);
+    box-shadow: 0px 4px 4px 2px rgba(20,20,20,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.curso img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.nome-curso {
+    font-weight: 300;
+    color: var(--cinza);
+    font-size: 16px;
+    margin: 30px 5px 10px 5px;
+}
+
+.nome-escola {
+    font-weight: 400;
+    color: var(--cinza);
+    font-size: 16px;
+    text-align: right;
+    margin: 10px;
+}
+
+/* Seção - Contato*/
+
+
+form {
+	margin: 30px 30px;
+}
+
+form label {
+	display: block;
+	font-size: 16px;
+	margin: 0 0 10px;
+    font-weight: 500;    
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+    border-radius: 10px;
+    border: 2px solid var(--preto)
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: var(--preto);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-redes {
+    width: 30px;
+    height: 30px;
+}
